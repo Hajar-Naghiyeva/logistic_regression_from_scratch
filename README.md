@@ -33,6 +33,8 @@ This project implements logistic regression from scratch to classify student adm
 5. **Report**
    - Document results and explanations.
 
+---
+
 ## Dataset
 - **Columns**:
   - `exam_1`: First exam score.
@@ -149,3 +151,17 @@ new_data = scaler.transform(new_data)
 predictions = model.predict(new_data)
 print(f'Predictions: {predictions}')
 ```
+
+---
+
+## Results
+The result indicates that the logistic regression model implemented from scratch achieved an accuracy score of 0.89 on the training set, suggesting that it correctly predicted 89% of the training data. The predictions for two new data points show that the model predicts the first student would be admitted (indicated by 1) and the second student would not be admitted (indicated by 0), which are the correct results.
+
+The result shows that the logistic regression model using a library achieved an accuracy score of 0.93 on the training set. This means the model was able to correctly classify 93% of the training examples, indicating a high level of performance. The predictions for the new data points are consistent with the earlier manual implementation, predicting that the first new student will be admitted (1) and the second will not (0). This consistency in predictions for unseen data suggests the model's reliability.
+
+---
+
+## Conclusion
+As can be observed in the final section of the code, both the manual and library-based implementations of logistic regression correctly predicted the label for the test set. That is reasonable enough given the high accuracies of both models (0.89 for manual, 0.93 for library). The slight superiority of the library approach’s accuracy might be attributed to highly optimized techniques applied to the model within the `scikit-learn` library.
+
+---
