@@ -2,8 +2,6 @@
 
 # Logistic Regression from Scratch
 
----
-
 ## Overview
 This project implements logistic regression from scratch to classify student admission based on exam scores. The dataset (`exams.csv`) contains two exam scores and a binary label indicating whether a student was admitted (1) or not (0).
 
